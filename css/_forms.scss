@@ -1,0 +1,22 @@
+input, textarea {
+  
+  border:none;
+  padding-left:8px;
+  
+}
+
+input[type="submit"]{
+  
+  padding:5px 40px;
+  cursor:pointer;
+  background:$primary;
+  color:#fff;
+  transition:0.3s;
+  
+  &:hover, &:active, &:focus {
+    
+    background:$secondary;
+    
+  }
+  
+}
