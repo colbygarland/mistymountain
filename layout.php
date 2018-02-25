@@ -140,7 +140,10 @@ function IDP_Custom_Layouts($type){
 add_filter( 'flexible_columns_wrap_outer', 'IDP_Column_WrapOuter');
 add_filter( 'flexible_columns_wrap_outer_end', 'IDP_Column_WrapOuter_End');
 function IDP_Column_WrapOuter(){
+
   $contain = '';
+  $padding = get_field('padding');
+
 	if ( get_row_layout() == 'full_width_row' || get_row_layout() == '2_column_row' || get_row_layout() == '3_column_row' || get_row_layout() == '4_column_row' ){
     
     if( have_rows('column') || have_rows('column_1') || have_rows('column_2') || have_rows('column_3') || have_rows('column_4')):
@@ -149,7 +152,7 @@ function IDP_Column_WrapOuter(){
           
 					if( get_row_layout() == 'content' ){ 
             
-             $contain = '<div class="content">';
+             $contain = '<div class="content '.$padding.'">';
             
           }
     

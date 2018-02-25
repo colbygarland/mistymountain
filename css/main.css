@@ -11170,21 +11170,15 @@ input[type="submit"] {
   input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
     background: #d8d3cb; }
 
-.portfolio {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  @media (min-width: 992px) {
-    .portfolio {
-      /*display:grid;
-      grid-gap:10px;
-      grid-template-columns:1fr 1fr 1fr 1fr;*/
-      line-height: 0;
-      -webkit-column-count: 4;
-      -webkit-column-gap: 0px;
-      -moz-column-count: 4;
-      -moz-column-gap: 0px;
-      column-count: 4;
-      column-gap: 0px; } }
+@media (min-width: 992px) {
+  .portfolio {
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 4;
+    -moz-column-gap: 0px;
+    column-count: 4;
+    column-gap: 0px; } }
 
 .portfolio-img {
   display: -ms-flexbox;
