@@ -105,7 +105,7 @@ function IDP_Custom_Layouts($type){
       
       $content .= '
       <div class="portfolio-img" >
-        <a href="'.$p['url'].'" class="venobox"><img src="' . $p['sizes']['1c_sm.2c_lg_sm2x.3c_xl_md2x'] . '" alt="' . $p['alt'] . '" class="lazy-load"></a>
+        <a href="'.$p['url'].'" class="venobox" data-gall="portfolio"><img src="' . $p['sizes']['1c_sm.2c_lg_sm2x.3c_xl_md2x'] . '" alt="' . $p['alt'] . '" class="lazy-load"></a>
         ' . $caption . '
       </div>
       ';
