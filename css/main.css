@@ -11079,6 +11079,9 @@ footer {
       padding-top: 80px;
       padding-bottom: 80px; } }
 
+.gallery img {
+  border: none !important; }
+
 .photo-header {
   margin-left: -15px;
   margin-right: -15px;
@@ -11103,11 +11106,12 @@ footer {
   margin-bottom: 0;
   font-family: "Euphoria Script", cursive;
   text-transform: none;
-  font-size: 80px; }
+  font-size: 55px; }
   @media (min-width: 992px) {
     .photo-header-title {
       padding-top: 150px;
-      padding-bottom: 150px; } }
+      padding-bottom: 150px;
+      font-size: 80px; } }
   .photo-header-title.full-screen {
     padding-top: 200px;
     padding-bottom: 200px; }
