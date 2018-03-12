@@ -18,13 +18,16 @@ get_header();
         $feature  = get_field('featured_photo',$post->ID);
         $date     = get_the_date('F j, Y', $post->ID);
         $tags     = get_the_tags();
-        $all_tags = '<p><small>';
+        //$all_tags = '<p><small>';
 
         foreach ( $tags as $t ){
           $all_tags .= '<a href="'.get_tag_link($t->term_id).'">' . $t->name . ' </a>';
         }
 
-        $all_tags .= '</small></p>';
+        //$all_tags .= '</small></p>';
+
+        if ( $tags ) $tags_part = '| ' . $all_tags;
+        else $tags_part  = '';
         
         echo '
         <div class="blog-post aos-init" data-aos="fade-up">
@@ -32,8 +35,8 @@ get_header();
           
             <div class="col-sm-12">
               <a href="'.$link.'"><img src="'.$feature['sizes']['medium'].'" alt="'.$feature['alt'].'"></a>
-              <h3 class="blog-post-title"><a href="'.$link.'">'.$title.' <small>Posted on '.$date.'</small></a></h3>
-              ' . $all_tags . '
+              <h3 class="blog-post-title"><a href="'.$link.'">'.$title.' </a></h3>
+              <p class="text-muted">'.$date.' '.$tags_part.'</p>
               <a href="'.$link.'">Read more</a>
             </div>
           
@@ -61,7 +64,7 @@ get_header();
           </div>
           <div class="col-sm-9">
             <h4><a href="'.$link.'">'.$title.'</a></h4>
-            <h6>Posted on '.$date.'</h6>
+            <p class="text-muted">'.$date.'</p>
           </div>
         </div>
       </div>
