@@ -21,6 +21,18 @@
   float:left;
   width:50%;
 
+  &.top {
+    background-position: top;
+  }
+
+  &.center {
+    background-position: center;
+  }
+
+  &.bottom {
+    background-position: bottom;
+  }
+
   &:first-child {
     height:400px;
   }

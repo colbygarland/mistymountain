@@ -19,9 +19,10 @@ function IDP_Custom_Layouts($type){
 
       $img  = $p['photo'];
       $size = $p['orientation'];
+      $pos  = $p['position'];
       
       $content .= '
-      <div class="featured-photo '.$size.'" style="background-image:url(' . $img['sizes']['1c_md.2c_xl_md2x.3c_lg2x'] . ');"></div>
+      <div class="featured-photo '.$size.' '.$pos.'" style="background-image:url(' . $img['sizes']['1c_md.2c_xl_md2x.3c_lg2x'] . ');"></div>
       ';
       
     }

@@ -10766,6 +10766,10 @@ p {
   background-position: center center;
   float: left;
   width: 50%; }
+  .featured-photo.top {
+    background-position: top; }
+  .featured-photo.center {
+    background-position: center; }
   .featured-photo:first-child {
     height: 400px; }
   @media (min-width: 768px) {
