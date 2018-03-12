@@ -10734,7 +10734,7 @@ h1 {
   font-size: calc(32px + 2vw);
   margin-bottom: 30px;
   color: #717171;
-  text-transform: uppercase; }
+  text-transform: capitalize; }
 
 a {
   color: #111111;
@@ -10770,6 +10770,8 @@ p {
     background-position: top; }
   .featured-photo.center {
     background-position: center; }
+  .featured-photo.bottom {
+    background-position: bottom; }
   .featured-photo:first-child {
     height: 400px; }
   @media (min-width: 768px) {
