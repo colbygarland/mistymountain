@@ -36,8 +36,7 @@ get_header();
             <div class="col-sm-12">
               <a href="'.$link.'"><img src="'.$feature['sizes']['medium'].'" alt="'.$feature['alt'].'"></a>
               <h3 class="blog-post-title"><a href="'.$link.'">'.$title.' </a></h3>
-              <p class="text-muted">'.$date.' '.$tags_part.'</p>
-              <a href="'.$link.'">Read more</a>
+              <p class="text-muted">'.$date.' '.$tags_part.' <br><a href="'.$link.'">Read more</a></p>
             </div>
           
           </div>
