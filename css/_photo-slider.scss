@@ -14,4 +14,10 @@
     min-height:500px;
   }
 
+  .slick-prev, .slick-next {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
 }

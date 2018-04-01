@@ -11997,5 +11997,9 @@ img.figlio {
   .photo-slider.slick-initialized {
     display: block;
     min-height: 500px; }
+  .photo-slider .slick-prev, .photo-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
 
 /*# sourceMappingURL=main.css.map */
