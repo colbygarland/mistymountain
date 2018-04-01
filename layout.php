@@ -133,7 +133,7 @@ function IDP_Custom_Layouts($type){
   break;
 
   case 'photo_slider':
-
+// photo slider
     $photos = get_sub_field('photos');
     $content .= '
     <div class="col-sm-12"><div class="photo-slider">';
