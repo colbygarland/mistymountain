@@ -2,6 +2,12 @@
 
   display:none;
 
+  .slick-slide {
+    img {
+      position: relative;
+      width:100%;
+    }
+  }
 
   &.slick-initialized {
     display:block;
