@@ -11989,5 +11989,10 @@ img.figlio {
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg); } }
+.photo-slider {
+  display: none; }
+  .photo-slider.slick-initialized {
+    display: block;
+    min-height: 500px; }
 
 /*# sourceMappingURL=main.css.map */

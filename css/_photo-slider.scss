@@ -1,0 +1,11 @@
+.photo-slider {
+
+  display:none;
+
+
+  &.slick-initialized {
+    display:block;
+    min-height:500px;
+  }
+
+}
