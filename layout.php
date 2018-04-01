@@ -136,7 +136,7 @@ function IDP_Custom_Layouts($type){
 
     $photos = get_sub_field('photos');
     $content .= '
-    <div class="photo-slider">';
+    <div class="col-sm-12"><div class="photo-slider">';
 
     foreach ( $photos as $p ){
       $size = $p['sizes']['Desktop'];
@@ -149,7 +149,7 @@ function IDP_Custom_Layouts($type){
     }
 
     $content .= '
-    </div>
+    </div></div>
     ';
 
   break;
