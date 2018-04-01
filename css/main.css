@@ -12000,6 +12000,17 @@ img.figlio {
   .photo-slider .slick-prev, .photo-slider .slick-next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent; }
 
 /*# sourceMappingURL=main.css.map */
