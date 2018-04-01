@@ -131,6 +131,28 @@ function IDP_Custom_Layouts($type){
     ';
   
   break;
+
+  case 'photo_slider':
+
+    $photos = get_sub_field('photos');
+    $content .= '
+    <div class="photo-slider">';
+
+    foreach ( $photos as $p ){
+      $size = $p['sizes']['Desktop'];
+      $alt  = $p['alt'];
+      $content .= '
+      <div class="slide">
+        <img alt="'.$alt.'" src="'.$size.'">
+      </div>
+      ';
+    }
+
+    $content .= '
+    </div>
+    ';
+
+  break;
 		
 	endswitch;
   
