@@ -15,6 +15,13 @@ jQuery(window).bind("load", function() {
       }
     });
 
+    $('.photo-slider').slick({
+      infinite: true,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      dots: true
+    });
 
   });
 });
