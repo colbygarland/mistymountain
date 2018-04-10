@@ -11077,13 +11077,21 @@ footer {
             font-size: 16px;
             text-transform: none;
             font-family: "Open Sans", sans-serif; } }
-.content {
+.content.padding {
   padding-top: 50px;
   padding-bottom: 50px; }
-  @media (min-width: 992px) {
-    .content {
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+.content.padding-top {
+  padding-top: 50px; }
+.content.padding-bottom {
+  padding-bottom: 50px; }
+@media (min-width: 992px) {
+  .content.padding {
+    padding-top: 80px;
+    padding-bottom: 80px; }
+  .content.padding-top {
+    padding-top: 80px; }
+  .content.padding-bottom {
+    padding-bottom: 80px; } }
 
 .gallery img {
   border: none !important; }
