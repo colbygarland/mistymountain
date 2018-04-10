@@ -165,11 +165,10 @@ add_filter( 'flexible_columns_wrap_outer_end', 'IDP_Column_WrapOuter_End');
 function IDP_Column_WrapOuter(){
 
   $contain = '';
-  $padding = get_field('block_padding');
 
 	if ( get_row_layout() == 'full_width_row' || get_row_layout() == '2_column_row' || get_row_layout() == '3_column_row' || get_row_layout() == '4_column_row' ){
 
-	  $padding = get_field('block_padding');
+	  $padding = get_sub_field('block_padding');
     
     if( have_rows('column') || have_rows('column_1') || have_rows('column_2') || have_rows('column_3') || have_rows('column_4')):
     
