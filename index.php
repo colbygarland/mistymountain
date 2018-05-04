@@ -18,7 +18,7 @@ get_header();
         $feature  = get_field('featured_photo',$post->ID);
         $date     = get_the_date('F j, Y', $post->ID);
         $tags     = get_the_tags();
-        //$all_tags = '<p><small>';
+        $all_tags = '';
 
         foreach ( $tags as $t ){
           $all_tags .= '<a href="'.get_tag_link($t->term_id).'">' . $t->name . ' </a>';
