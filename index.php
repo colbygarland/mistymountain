@@ -19,6 +19,7 @@ get_header();
         $date     = get_the_date('F j, Y', $post->ID);
         $tags     = get_the_tags();
         $all_tags = '';
+        $tags_part = '';
 
         foreach ( $tags as $t ){
           $all_tags .= '<a href="'.get_tag_link($t->term_id).'">' . $t->name . ' </a>';
