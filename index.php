@@ -4,7 +4,7 @@ get_header();
 ?>
 
 <article class="main white-bg">	
-  <div class="container-fluid content">
+  <div class="container-fluid content padding">
     <div class="row">
       <div class="col-md-1"></div>
       <div class="col-md-8">
