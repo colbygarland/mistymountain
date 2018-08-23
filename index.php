@@ -47,30 +47,43 @@ get_header();
     </div>
       <div class="col-md-3">
         <h3>Blog Archive</h3>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
+<?php //if ( have_posts() ) while ( have_posts() ) : the_post(); 
       
-      global $post;
-      
-      $title   = get_the_title($post->ID);
-      $link    = get_permalink($post->ID);
-      $feature = get_field('featured_photo',$post->ID);
-      $date    = get_the_date('F j, Y', $post->ID);
-      
-      echo '
-      <div class="archived-post">
-        <div class="row">
-          <div class="col-sm-3">
-            <a href="'.$link.'"><img src="'.$feature['sizes']['3c_sm'].'" alt="'.$feature['alt'].'"></a>
-          </div>
-          <div class="col-sm-9">
-            <h4><a href="'.$link.'">'.$title.'</a></h4>
-            <p class="text-muted">'.$date.'</p>
+      //global $post;
+      $args = array(
+        'posts_per_page'   => -1,
+        'post_type'        => 'post',
+        'post_status'      => 'publish'
+      );
+      $posts = get_posts($args);
+        
+      foreach ( $posts as $p ){
+        
+        $title   = get_the_title($p->ID);
+        $link    = get_permalink($p->ID);
+        $feature = get_field('featured_photo',$p->ID);
+        $date    = get_the_date('F j, Y', $p->ID);
+
+        echo '
+        <div class="archived-post">
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="'.$link.'"><img src="'.$feature['sizes']['3c_sm'].'" alt="'.$feature['alt'].'"></a>
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="'.$link.'">'.$title.'</a></h4>
+              <p class="text-muted">'.$date.'</p>
+            </div>
           </div>
         </div>
-      </div>
-      ';
+        ';
+        
+      }
       
-endwhile; ?> 
+      
+      
+//endwhile; 
+        ?> 
       </div>
     </div>
     
