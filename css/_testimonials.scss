@@ -4,6 +4,14 @@
   padding:40px 20px;
   margin-bottom:40px;
 
+  @media (min-width:992px){
+    margin-bottom:80px;
+  }
+
+  &:last-child {
+    margin-bottom:0!important;
+  }
+
   img {
     max-width:200px;
     border-radius: 50%;
