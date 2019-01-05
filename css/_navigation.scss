@@ -171,8 +171,9 @@
         transition:0.4s;
         visibility: hidden;
         z-index:1;
-        background:$primary;
+        background:$bg;
         padding:10px;
+        box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.36);
 
         li {
 
@@ -189,6 +190,7 @@
             font-size:16px;
             text-transform:none;
             font-family:$font-body;
+            color:$text-color;
           }
 
         }

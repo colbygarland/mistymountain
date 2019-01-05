@@ -19,7 +19,7 @@
 <footer>
   <div class="container">
     <p>
-      &copy;<?php echo date('Y');?> <?php echo get_option('blogname'); ?>
+      &copy;<?php echo date('Y');?> <?php echo get_option('blogname'); ?> | Website by <a href="https://colbygarland.ca" target="_blank">Colby Garland</a>
     </p>
   </div>
 </footer>
