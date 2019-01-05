@@ -191,7 +191,7 @@ function IDP_Custom_Layouts($type){
 
 		$content .= '
 		<div class="col-sm-12">
-			<section class="testiomonials">
+			<section class="testimonials">
 				'.$tt.'
 			</section>
 		</div>
