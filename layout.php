@@ -181,10 +181,8 @@ function IDP_Custom_Layouts($type){
 						'.$img.'
 					</div>
 					<div class="col-md-9">
-						"'.$t['testimonial'].'"
-						<p>
-							'.$t['author'].'
-						</p>
+						'.$t['testimonial'].'
+						<p><strong>'.$t['author'].'</strong></p>
 					</div>
 				</div>
 			</div>
@@ -221,7 +219,7 @@ function IDP_Column_WrapOuter(){
 
 				 while(have_rows('column') || have_rows('column_1') || have_rows('column_2') || have_rows('column_3') || have_rows('column_4') ): the_row();
 
-					if( get_row_layout() == 'content' || get_row_layout() == 'line_break' ){
+					if( get_row_layout() == 'content' || get_row_layout() == 'line_break' || get_row_layout() == 'testimonials' ){
 
              $contain = '<div class="content '.$padding.'">';
 
@@ -239,7 +237,7 @@ function IDP_Column_WrapOuter_End(){
     if( have_rows('column') || have_rows('column_1') || have_rows('column_2') || have_rows('column_3') || have_rows('column_4') ):
 				 while( have_rows('column') || have_rows('column_1') || have_rows('column_2') || have_rows('column_3') || have_rows('column_4') ): the_row();
 
-					if( get_row_layout() == 'content' || get_row_layout() == 'line_break' ) $contain = '</div>';
+					if( get_row_layout() == 'content' || get_row_layout() == 'line_break' || get_row_layout() == 'testimonials' ) $contain = '</div>';
 
 				endwhile;
 			endif; //END SINGLE COLUMN
