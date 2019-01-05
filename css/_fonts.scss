@@ -9,5 +9,15 @@
 	src: local('gothic'), url('../fonts/gothic.woff') format('woff'), url('../fonts/gothic.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Bringshoot';
+    src:  url('../fonts/Bringshoot.ttf.woff') format('woff'),
+    url('../fonts/Bringshoot.ttf.svg#Bringshoot') format('svg'),
+    url('../fonts/Bringshoot.ttf.eot'),
+    url('../fonts/Bringshoot.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=Euphoria+Script');
