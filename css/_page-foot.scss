@@ -10,4 +10,11 @@ footer {
     color:#fff;
   }
 
+  a {
+    color:#fff;
+    &:hover, &:active, &:focus {
+      color:#eee;
+    }
+  }
+
 }
