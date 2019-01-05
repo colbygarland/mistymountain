@@ -157,9 +157,11 @@ function IDP_Custom_Layouts($type){
 	case 'line_break':
 
 		$content .= '
-		<section class="line-break center">
-			<h2 class="bringshoot">'.get_sub_field('text').'</h2>
-		</section>
+		<div class="col-sm-12">
+			<section class="line-break center">
+				<h2 class="bringshoot">'.get_sub_field('text').'</h2>
+			</section>
+		</div>
 		';
 
 	break;
