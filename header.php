@@ -44,9 +44,9 @@ endif;
 <body class="<?php if(is_front_page()) echo 'home';?>">
 
   <ul class="mobile-menu">
-    <?php  
+    <?php
     $exclude = ''; //comma seperated ID's
-    wp_list_pages( 'sort_column=menu_order&title_li=&depth=3&echo=1&exclude='.$exclude);?>	
+    wp_list_pages( 'sort_column=menu_order&title_li=&depth=3&echo=1&exclude='.$exclude);?>
   </ul>
 
   <input type="checkbox" id="nav-trigger" class="" />
@@ -60,31 +60,43 @@ endif;
 
     <header>
 
-      <div class="container"><h2 class="title"><a href="<?php echo get_option('siteurl');?>" class="ir"><?php echo get_option('blogname');?></a></h2></div>
-
-      <div class="menu-social-media">
-
-          <ul class="menu">
-            <?php  
-            $exclude = ''; //comma seperated ID's
-            wp_list_pages( 'sort_column=menu_order&title_li=&depth=3&echo=1&exclude='.$exclude);?>	
-          </ul>
-
-          <ul class="social-media-links">
-            <li class="facebook">
-              <a href="https://www.facebook.com/MistyMountainImages/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li class="instagram">
-              <a href="https://www.instagram.com/misty_mountain_images/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </li>
-            <li class="phone">
-              <a href="tel:780-228-3012"><i class="fa fa-phone" aria-hidden="true"></i></a>
-            </li>
-            <li class="email">
-              <a href="mailto:mistymountainphotographygp@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            </li>
-          </ul>
-
+      <div class="container">
+        <ul class="left-menu">
+          <li>
+            <a href="<?php echo get_permalink(6);?>">About</a>
+          </li>
+          <li>
+            <a href="<?php echo get_permalink(7);?>">Portfolio</a>
+            <ul class="children">
+              <li>
+                <a href="<?php echo get_permalink(13);?>">Families</a>
+              </li>
+              <li>
+                <a href="<?php echo get_permalink(14);?>">Couples/Engagement</a>
+              </li>
+              <li>
+                <a href="<?php echo get_permalink(15);?>">Weddings</a>
+              </li>
+              <li>
+                <a href="<?php echo get_permalink(16);?>">Newborns</a>
+              </li>
+              <li>
+                <a href="<?php echo get_permalink(17);?>">Portraits/Grads</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="logo">
+          <h2 class="title"><a href="<?php echo get_option('siteurl');?>" class="ir"><?php echo get_option('blogname');?></a></h2>
+        </div>
+        <ul class="right-menu">
+          <li>
+            <a href="<?php echo get_permalink(8);?>">Contact</a>
+          </li>
+          <li>
+            <a href="<?php echo get_permalink(9);?>">Blog</a>
+          </li>
+        </ul>
       </div>
 
     </header>

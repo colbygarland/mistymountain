@@ -84,13 +84,13 @@
 // DESKTOP MENU
 @media (min-width: 992px) {
 
-  
+
   .mobile-menu {
     display:none;
   }
 
 
-  
+
   .menu-social-media {
 
     background:$primary;
@@ -98,7 +98,14 @@
 
   }
 
-  .menu {
+  .left-menu {
+    left:110px;
+  }
+  .right-menu {
+    right:130px;
+  }
+
+  .left-menu, .right-menu {
 
     @include flexbox();
     justify-content: center;
@@ -106,9 +113,12 @@
     list-style:none;
     padding-top:15px;
     padding-bottom:15px;
-    padding-left:5vw;
+    padding-left:0;
     margin:0;
     height:60px;
+    position: absolute;
+    top:90px;
+    z-index:999;
 
     li {
 
@@ -119,7 +129,8 @@
 
       a {
         text-transform:uppercase;
-        color:#fff;
+        color:#111;
+        font-size:17px;
         transition:0.3s;
         font-family:$font-gothic;
       }
@@ -137,7 +148,7 @@
         }
 
       }
-      
+
       &.current_page_parent, &.current_page_item {
         > a {
           color:$text-color;
