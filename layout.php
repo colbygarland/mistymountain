@@ -175,7 +175,7 @@ function IDP_Custom_Layouts($type){
 			if ( !$img ) $img = '';
 			else $img = '<img src="'.$img['sizes']['portfolio'].'" alt="'.$img['alt'].'" />';
 			$tt .= '
-			<div class="testie">
+			<div class="testie aos-init" data-aos="fade-up" data-aos-duration="800">
 				<div class="row">
 					<div class="col-md-3">
 						'.$img.'
