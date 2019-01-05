@@ -166,6 +166,41 @@ function IDP_Custom_Layouts($type){
 
 	break;
 
+	case 'testimonials':
+
+		$testies = get_sub_field('testimonials');
+		$tt = '';
+		foreach ( $testies as $t ){
+			$img = $t['photo'];
+			if ( !$img ) $img = '';
+			else $img = '<img src="'.$img['sizes']['portfolio'].'" alt="'.$img['alt'].'" />';
+			$tt .= '
+			<div class="testie">
+				<div class="row">
+					<div class="col-md-3">
+						'.$img.'
+					</div>
+					<div class="col-md-9">
+						"'.$t['testimonial'].'"
+						<p>
+							'.$t['author'].'
+						</p>
+					</div>
+				</div>
+			</div>
+			';
+		}
+
+		$content .= '
+		<div class="col-sm-12">
+			<section class="testiomonials">
+				'.$tt.'
+			</section>
+		</div>
+		';
+
+	break;
+
 	endswitch;
 
   return $content;
