@@ -80,16 +80,13 @@ endif;
                 <a href="<?php echo get_permalink(13);?>">Families</a>
               </li>
               <li>
-                <a href="<?php echo get_permalink(14);?>">Couples/Engagement</a>
+                <a href="<?php echo get_permalink(14);?>">Couples + Engagement</a>
               </li>
               <li>
                 <a href="<?php echo get_permalink(15);?>">Weddings</a>
               </li>
               <li>
-                <a href="<?php echo get_permalink(16);?>">Newborns</a>
-              </li>
-              <li>
-                <a href="<?php echo get_permalink(17);?>">Portraits/Grads</a>
+                <a href="<?php echo get_permalink(16);?>">Newborns + Maternity</a>
               </li>
             </ul>
           </li>
