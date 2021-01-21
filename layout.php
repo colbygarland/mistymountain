@@ -45,7 +45,7 @@ function IDP_Custom_Layouts($type){
 
     $content .= '
     <div class="col-sm-12"><section class="photo-header" style="background-image:url('.$photo['sizes']['Desktop'].');">
-      <h1 class="photo-header-title container '.$full.' '.$pos.'">'.$title.'</h1>
+      <h1 class="photo-header-title container text-center '.$full.' '.$pos.'">'.$title.'</h1>
     </section></div>
     ';
 
