@@ -14128,6 +14128,7 @@ footer a:hover, footer a:active, footer a:focus {
   .photo-header-title {
     padding-top: 150px;
     padding-bottom: 150px;
+    font-size: calc(24px + 2vw);
   }
 }
 
