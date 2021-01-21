@@ -39,13 +39,14 @@ function IDP_Custom_Layouts($type){
     $title = get_sub_field('title');
     $full  = get_sub_field('full_screen');
     $pos   = get_sub_field('title_position');
+    $font  = get_sub_field('font');
 
     if ( $full ) $full = 'full-screen';
     else $full = '';
 
     $content .= '
     <div class="col-sm-12"><section class="photo-header" style="background-image:url('.$photo['sizes']['Desktop'].');">
-      <h1 class="photo-header-title container text-center '.$full.' '.$pos.'">'.$title.'</h1>
+      <h1 class="photo-header-title container text-center '.$full.' '.$pos.' '.$font.'">'.$title.'</h1>
     </section></div>
     ';
 

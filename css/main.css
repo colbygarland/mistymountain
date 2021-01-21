@@ -14117,14 +14117,17 @@ footer a:hover, footer a:active, footer a:focus {
   color: #fff;
   margin-bottom: 0;
   text-transform: none;
-  font-size: 55px;
+  font-size: calc(30px + 2vw);
+}
+
+.photo-header-title.font-script {
+  font-family: "Euphoria Script", cursive;
 }
 
 @media (min-width: 992px) {
   .photo-header-title {
     padding-top: 150px;
     padding-bottom: 150px;
-    font-size: 80px;
   }
 }
 
